@@ -1,4 +1,4 @@
-define([], function () {
+define(["module"], function (module) {
   "use strict";
 
   function _classCallCheck(instance, Constructor) {
@@ -54,4 +54,6 @@ define([], function () {
 
     return Math;
   }();
+
+  module.exports = Math;
 });

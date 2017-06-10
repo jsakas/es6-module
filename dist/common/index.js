@@ -33,3 +33,5 @@ var Math = function () {
 
   return Math;
 }();
+
+module.exports = Math;

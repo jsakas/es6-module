@@ -1,4 +1,7 @@
 class Math {
+  constructor() {
+  }
+
   add(x, y) {
     return x + y
   }
@@ -15,3 +18,5 @@ class Math {
     return x / y;
   }
 }
+
+module.exports = Math;

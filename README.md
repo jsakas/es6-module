@@ -6,6 +6,7 @@ An ES6 module boilerplate.
 
 ## Commands
 
-| `npm run dev` | Build src > dist folder and watch for changes. |
+| `npm run dev`  | Build src > dist folder and watch for changes. |
 |----------------|---------------------------------------------------|
 | `npm run dist` | Build src > dist folder. |
+| `npm run test` | Run the tests. |
