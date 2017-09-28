@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "es6-module/src/index.js~math",
-    "class/src/index.js~Math.html",
-    "<span>Math</span> <span class=\"search-result-import-path\">es6-module/src/index.js</span>",
+    "es6-module/src/index.js~math2",
+    "class/src/index.js~Math2.html",
+    "<span>Math2</span> <span class=\"search-result-import-path\">es6-module/src/index.js</span>",
     "class"
   ],
   [
@@ -337,79 +337,79 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber9",
+    "test-file/test/test.js.html#lineNumber7",
     "Math",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber29",
+    "test-file/test/test.js.html#lineNumber27",
     "Math",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber30",
+    "test-file/test/test.js.html#lineNumber28",
     "Math #add()",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber31",
+    "test-file/test/test.js.html#lineNumber29",
     "Math #add() should return the sum of two numbers",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber48",
+    "test-file/test/test.js.html#lineNumber46",
     "Math #divide()",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber49",
+    "test-file/test/test.js.html#lineNumber47",
     "Math #divide() should return the quotient of two numbers",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber42",
+    "test-file/test/test.js.html#lineNumber40",
     "Math #multiply()",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber43",
+    "test-file/test/test.js.html#lineNumber41",
     "Math #multiply() should return the product of two numbers",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber36",
+    "test-file/test/test.js.html#lineNumber34",
     "Math #subtract()",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber37",
+    "test-file/test/test.js.html#lineNumber35",
     "Math #subtract() should return the difference of two numbers",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber10",
+    "test-file/test/test.js.html#lineNumber8",
     "Math module",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber11",
+    "test-file/test/test.js.html#lineNumber9",
     "Math module can be loaded as a CommonJS module",
     "test"
   ],
   [
     "",
-    "test-file/test/test.js.html#lineNumber16",
+    "test-file/test/test.js.html#lineNumber14",
     "Math module can be loaded as an AMD module",
     "test"
   ],
@@ -420,27 +420,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/index.js~math#add",
-    "class/src/index.js~Math.html#instance-method-add",
-    "src/index.js~Math#add",
+    "src/index.js~math2#add",
+    "class/src/index.js~Math2.html#instance-method-add",
+    "src/index.js~Math2#add",
     "method"
   ],
   [
-    "src/index.js~math#divide",
-    "class/src/index.js~Math.html#instance-method-divide",
-    "src/index.js~Math#divide",
+    "src/index.js~math2#divide",
+    "class/src/index.js~Math2.html#instance-method-divide",
+    "src/index.js~Math2#divide",
     "method"
   ],
   [
-    "src/index.js~math#multiply",
-    "class/src/index.js~Math.html#instance-method-multiply",
-    "src/index.js~Math#multiply",
+    "src/index.js~math2#multiply",
+    "class/src/index.js~Math2.html#instance-method-multiply",
+    "src/index.js~Math2#multiply",
     "method"
   ],
   [
-    "src/index.js~math#subtract",
-    "class/src/index.js~Math.html#instance-method-subtract",
-    "src/index.js~Math#subtract",
+    "src/index.js~math2#subtract",
+    "class/src/index.js~Math2.html#instance-method-subtract",
+    "src/index.js~Math2#subtract",
     "method"
   ],
   [

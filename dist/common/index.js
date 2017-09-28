@@ -11,12 +11,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * let sum = math.sum(3, 5);
  * console.log(sum);
  */
-var Math = function () {
-  function Math() {
-    _classCallCheck(this, Math);
+var Math2 = function () {
+  function Math2() {
+    _classCallCheck(this, Math2);
   }
 
-  _createClass(Math, [{
+  _createClass(Math2, [{
     key: "add",
 
     /**
@@ -65,7 +65,8 @@ var Math = function () {
     }
   }]);
 
-  return Math;
+  return Math2;
 }();
 
-module.exports = Math;
+module.exports = Math2;
+window.Math2 = Math2;

@@ -1,22 +1,20 @@
-const Math = require('../dist/common/');
+var Math2 = require('../dist/').default;
 var assert = require('assert');
 var requirejs = require('requirejs');
 
-const math = new Math();
-
-
+const math = new Math2();
 
 describe('Math', () => {
   describe('module', () => {
     it('can be loaded as a CommonJS module', () => {
-      const commonMath = new Math();
+      const commonMath = new Math2();
       assert.equal(typeof commonMath, 'object')
     })
 
     it('can be loaded as an AMD module', () => {
       requirejs.config({
           'paths': {
-            math: '../dist/amd'
+            math: '../dist'
           }
       });      
       requirejs(['math'], (amdMath) => {

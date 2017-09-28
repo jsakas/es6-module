@@ -1,11 +1,11 @@
 /**
- * The `Math` class provides some simple math functions.
+ * The `Math2` class provides some simple math functions.
  * @example
- * let math = new Math();
+ * let math = new Math2();
  * let sum = math.sum(3, 5);
  * console.log(sum);
  */
-class Math {
+class Math2 {
   /**
    * @param {number} x
    * @param {number} y
@@ -43,4 +43,4 @@ class Math {
   }
 }
 
-module.exports = Math
+export default Math2

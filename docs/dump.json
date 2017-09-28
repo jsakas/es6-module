@@ -3,7 +3,7 @@
     "__docId__": 0,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/**\n * The `Math` class provides some simple math functions.\n * @example\n * let math = new Math();\n * let sum = math.sum(3, 5);\n * console.log(sum);\n */\nclass Math {\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} sum of x and y\n   */\n  add (x, y) {\n    return x + y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} difference of x and y\n   */\n  subtract (x, y) {\n    return x - y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} product of x and y\n   */\n  multiply (x, y) {\n    return x * y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} quotient of x and y\n   */\n  divide (x, y) {\n    return x / y\n  }\n}\n\nmodule.exports = Math\n",
+    "content": "/**\n * The `Math2` class provides some simple math functions.\n * @example\n * let math = new Math2();\n * let sum = math.sum(3, 5);\n * console.log(sum);\n */\nclass Math2 {\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} sum of x and y\n   */\n  add (x, y) {\n    return x + y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} difference of x and y\n   */\n  subtract (x, y) {\n    return x - y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} product of x and y\n   */\n  multiply (x, y) {\n    return x * y\n  }\n\n  /**\n   * @param {number} x\n   * @param {number} y\n   * @return {number} quotient of x and y\n   */\n  divide (x, y) {\n    return x / y\n  }\n}\n\nexport default Math2\n",
     "static": true,
     "longname": "src/index.js",
     "access": null,
@@ -13,17 +13,17 @@
   {
     "__docId__": 1,
     "kind": "class",
-    "name": "Math",
+    "name": "Math2",
     "memberof": "src/index.js",
     "static": true,
-    "longname": "src/index.js~Math",
+    "longname": "src/index.js~Math2",
     "access": null,
-    "export": false,
+    "export": true,
     "importPath": "es6-module/src/index.js",
-    "importStyle": null,
-    "description": "The `Math` class provides some simple math functions.",
+    "importStyle": "Math2",
+    "description": "The `Math2` class provides some simple math functions.",
     "examples": [
-      "let math = new Math();\nlet sum = math.sum(3, 5);\nconsole.log(sum);"
+      "let math = new Math2();\nlet sum = math.sum(3, 5);\nconsole.log(sum);"
     ],
     "lineNumber": 8,
     "interface": false
@@ -32,11 +32,11 @@
     "__docId__": 2,
     "kind": "method",
     "name": "add",
-    "memberof": "src/index.js~Math",
+    "memberof": "src/index.js~Math2",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Math#add",
+    "longname": "src/index.js~Math2#add",
     "access": null,
     "description": "",
     "lineNumber": 14,
@@ -75,11 +75,11 @@
     "__docId__": 3,
     "kind": "method",
     "name": "subtract",
-    "memberof": "src/index.js~Math",
+    "memberof": "src/index.js~Math2",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Math#subtract",
+    "longname": "src/index.js~Math2#subtract",
     "access": null,
     "description": "",
     "lineNumber": 23,
@@ -118,11 +118,11 @@
     "__docId__": 4,
     "kind": "method",
     "name": "multiply",
-    "memberof": "src/index.js~Math",
+    "memberof": "src/index.js~Math2",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Math#multiply",
+    "longname": "src/index.js~Math2#multiply",
     "access": null,
     "description": "",
     "lineNumber": 32,
@@ -161,11 +161,11 @@
     "__docId__": 5,
     "kind": "method",
     "name": "divide",
-    "memberof": "src/index.js~Math",
+    "memberof": "src/index.js~Math2",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/index.js~Math#divide",
+    "longname": "src/index.js~Math2#divide",
     "access": null,
     "description": "",
     "lineNumber": 41,
@@ -866,7 +866,7 @@
     "__docId__": 63,
     "kind": "testFile",
     "name": "test/test.js",
-    "content": "const Math = require('../dist/common/');\nvar assert = require('assert');\nvar requirejs = require('requirejs');\n\nconst math = new Math();\n\n\n\ndescribe('Math', () => {\n  describe('module', () => {\n    it('can be loaded as a CommonJS module', () => {\n      const commonMath = new Math();\n      assert.equal(typeof commonMath, 'object')\n    })\n\n    it('can be loaded as an AMD module', () => {\n      requirejs.config({\n          'paths': {\n            math: '../dist/amd'\n          }\n      });      \n      requirejs(['math'], (amdMath) => {\n          assert.equal(typeof amdMath, 'object')\n      });\n    })\n  })\n})\n\ndescribe('Math', () => {\n  describe('#add()', () => {\n    it('should return the sum of two numbers', () => {\n      assert.equal(5, math.add(2, 3));\n    });\n  });\n\n  describe('#subtract()', () => {\n    it('should return the difference of two numbers', () => {\n      assert.equal(-1, math.subtract(2, 3));\n    });\n  });\n\n  describe('#multiply()', () => {\n    it('should return the product of two numbers', () => {\n      assert.equal(6, math.multiply(2, 3));\n    });\n  });\n\n  describe('#divide()', () => {\n    it('should return the quotient of two numbers', () => {\n      assert.equal(0.5, math.divide(2, 4));\n    });\n  });\n});\n",
+    "content": "var Math2 = require('../dist/').default;\nvar assert = require('assert');\nvar requirejs = require('requirejs');\n\nconst math = new Math2();\n\ndescribe('Math', () => {\n  describe('module', () => {\n    it('can be loaded as a CommonJS module', () => {\n      const commonMath = new Math2();\n      assert.equal(typeof commonMath, 'object')\n    })\n\n    it('can be loaded as an AMD module', () => {\n      requirejs.config({\n          'paths': {\n            math: '../dist'\n          }\n      });      \n      requirejs(['math'], (amdMath) => {\n          assert.equal(typeof amdMath, 'object')\n      });\n    })\n  })\n})\n\ndescribe('Math', () => {\n  describe('#add()', () => {\n    it('should return the sum of two numbers', () => {\n      assert.equal(5, math.add(2, 3));\n    });\n  });\n\n  describe('#subtract()', () => {\n    it('should return the difference of two numbers', () => {\n      assert.equal(-1, math.subtract(2, 3));\n    });\n  });\n\n  describe('#multiply()', () => {\n    it('should return the product of two numbers', () => {\n      assert.equal(6, math.multiply(2, 3));\n    });\n  });\n\n  describe('#divide()', () => {\n    it('should return the quotient of two numbers', () => {\n      assert.equal(0.5, math.divide(2, 4));\n    });\n  });\n});\n",
     "static": true,
     "longname": "test/test.js",
     "access": null,
@@ -884,7 +884,7 @@
     "longname": "test/test.js~describe0",
     "access": null,
     "description": "Math",
-    "lineNumber": 9
+    "lineNumber": 7
   },
   {
     "__docId__": 65,
@@ -897,7 +897,7 @@
     "longname": "test/test.js~describe0.describe1",
     "access": null,
     "description": "module",
-    "lineNumber": 10
+    "lineNumber": 8
   },
   {
     "__docId__": 66,
@@ -910,7 +910,7 @@
     "longname": "test/test.js~describe0.describe1.it2",
     "access": null,
     "description": "can be loaded as a CommonJS module",
-    "lineNumber": 11
+    "lineNumber": 9
   },
   {
     "__docId__": 67,
@@ -923,7 +923,7 @@
     "longname": "test/test.js~describe0.describe1.it3",
     "access": null,
     "description": "can be loaded as an AMD module",
-    "lineNumber": 16
+    "lineNumber": 14
   },
   {
     "__docId__": 68,
@@ -936,7 +936,7 @@
     "longname": "test/test.js~describe4",
     "access": null,
     "description": "Math",
-    "lineNumber": 29
+    "lineNumber": 27
   },
   {
     "__docId__": 69,
@@ -949,7 +949,7 @@
     "longname": "test/test.js~describe4.describe5",
     "access": null,
     "description": "#add()",
-    "lineNumber": 30
+    "lineNumber": 28
   },
   {
     "__docId__": 70,
@@ -962,7 +962,7 @@
     "longname": "test/test.js~describe4.describe5.it6",
     "access": null,
     "description": "should return the sum of two numbers",
-    "lineNumber": 31
+    "lineNumber": 29
   },
   {
     "__docId__": 71,
@@ -975,7 +975,7 @@
     "longname": "test/test.js~describe4.describe7",
     "access": null,
     "description": "#subtract()",
-    "lineNumber": 36
+    "lineNumber": 34
   },
   {
     "__docId__": 72,
@@ -988,7 +988,7 @@
     "longname": "test/test.js~describe4.describe7.it8",
     "access": null,
     "description": "should return the difference of two numbers",
-    "lineNumber": 37
+    "lineNumber": 35
   },
   {
     "__docId__": 73,
@@ -1001,7 +1001,7 @@
     "longname": "test/test.js~describe4.describe9",
     "access": null,
     "description": "#multiply()",
-    "lineNumber": 42
+    "lineNumber": 40
   },
   {
     "__docId__": 74,
@@ -1014,7 +1014,7 @@
     "longname": "test/test.js~describe4.describe9.it10",
     "access": null,
     "description": "should return the product of two numbers",
-    "lineNumber": 43
+    "lineNumber": 41
   },
   {
     "__docId__": 75,
@@ -1027,7 +1027,7 @@
     "longname": "test/test.js~describe4.describe11",
     "access": null,
     "description": "#divide()",
-    "lineNumber": 48
+    "lineNumber": 46
   },
   {
     "__docId__": 76,
@@ -1040,6 +1040,6 @@
     "longname": "test/test.js~describe4.describe11.it12",
     "access": null,
     "description": "should return the quotient of two numbers",
-    "lineNumber": 49
+    "lineNumber": 47
   }
 ]
