@@ -32,31 +32,29 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/index.js~Math.html">Math</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/index.js~Math2.html">Math2</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">test/test.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Math = require(&apos;../dist/common/&apos;);
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var Math2 = require(&apos;../dist/&apos;).default;
 var assert = require(&apos;assert&apos;);
 var requirejs = require(&apos;requirejs&apos;);
 
-const math = new Math();
-
-
+const math = new Math2();
 
 describe(&apos;Math&apos;, () =&gt; {
   describe(&apos;module&apos;, () =&gt; {
     it(&apos;can be loaded as a CommonJS module&apos;, () =&gt; {
-      const commonMath = new Math();
+      const commonMath = new Math2();
       assert.equal(typeof commonMath, &apos;object&apos;)
     })
 
     it(&apos;can be loaded as an AMD module&apos;, () =&gt; {
       requirejs.config({
           &apos;paths&apos;: {
-            math: &apos;../dist/amd&apos;
+            math: &apos;../dist&apos;
           }
       });      
       requirejs([&apos;math&apos;], (amdMath) =&gt; {
